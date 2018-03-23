@@ -52,14 +52,14 @@ $git clone NogizakaBlogGenerator
 
     **注意：因为`html2canvas`尚不支持跨域图片（与网页不同服务器的图片），`ckeditor`尚不支持本地的绝对路径absolute path，所以必须要将需要插入的图片存在本地且与`BlogGenerator.html`同一文件夹内，然后用相对路径relative path引用。只需要在同一文件夹内即可，并不一定需要将图片放在文件夹的根目录下**
 
-<img src="source/Instruction/4.jpg" width="90%">
+<img src="source/Instruction/4.JPG" width="90%">
 
 在URL栏中输入相对路径后，Width和Height会被自动提取出，然后需要将Width修改至小于550px以适应截图。在Lock Ratio的锁锁上时，宽高会自动匹配至原比例。
 <img src="source/Instruction/5.jpg" width="90%">
 
 5. 添加完文字与图片后点击输入框下方的预览
 
-<img src="source/Instruction/6.jpg" width="90%">
+<img src="source/Instruction/6.JPG" width="90%">
 
 在预览界面你可以进行预览，如果需要修改点击下方的返回编辑，如果无误，点击生成长图
 
@@ -67,17 +67,17 @@ $git clone NogizakaBlogGenerator
 
 6. 在加载后会有弹窗(FireFox)
 
-<img src="source/Instruction/8.jpg" width="90%">
+<img src="source/Instruction/8.JPG" width="90%">
 
 选择OK
 
 7. 默认的下载文件夹中会出现一个没有后缀extension的File文件，将其重命名为.png文件
 
-<img src="source/Instruction/9.jpg" width="90%">
+<img src="source/Instruction/9.JPG" width="90%">
 
 8. 完成
 
-<img src="source/Instruction/10.jpg" width="90%">
+<img src="source/Instruction/10.JPG" width="90%">
 
 
 ## 使用插件 Package Used
