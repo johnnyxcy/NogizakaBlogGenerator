@@ -1,0 +1,152 @@
+body {
+    background-image: url('Background.jpg');
+    background-size:100%;
+    background-repeat: repeat-y;
+    font-family:  "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+}
+.head {
+    text-shadow: 2px 2px 2px black;
+}
+
+#main_area {
+    width: 60%;
+    opacity: 1;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+input {
+    opacity: 0.8;
+    height: 30px;
+    width: 300px;
+    font-size: 18pt;
+}
+
+select {
+    height: 30px;
+    font-size: 18pt;
+    opacity: 0.8;
+}
+
+div {
+    margin: 5px 5px 5px 5px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-size: 18pt;
+    display: block;
+}
+#controls {
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    font-size: 12pt;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    font-size: 60%;
+    text-shadow: none;
+}
+#preview_content {
+    background-color: white;
+    width: 550px;
+    text-align: left;
+    display: block;
+    height: 100%;
+}
+
+#titlebox {
+    margin: 0px;
+}
+
+li{list-style:none;}
+th,td{text-align:left;vertical-align:top;}
+embed,object{outline:none;}
+.clearfix:after{
+	content:".";
+	display:block;height:0;clear:both;visibility:hidden;
+	}
+.clearfix{display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+/* End hide from IE-mac */
+
+#sheet {
+    text-align: center;
+    align-content: center;
+    padding: 0 35%;
+}
+#sheet h2{border:solid 3px #7e1083;
+    background:url(http://img.nogizaka46.com/blog/img/datebg.gif) 0 0 repeat-y;
+    border-radius: 6px;
+    width: 455px;
+}
+#entry {
+    text-align: left;
+    color: black;
+    text-shadow: none;
+    font-size: 16pt;
+    width: 90%;
+}
+
+
+#sheet h2 .date{
+	float:left;width:100px;background:#7e1083;
+	display:block;color:#fff;text-align:center;
+	padding:10px 0;font-family:futura,arial;
+	font-weight:normal;line-height:1;overflow:hidden;
+	}
+#sheet h2 .yearmonth{text-align:left;padding:0 10px;}
+#sheet h2 .yearmonth,
+#sheet h2 .daydate{display:block;}
+#sheet h2 .dd1{font-size:45px;}
+#sheet h2 .heading{
+	float:left;width:330px;color:#7e1083;
+	}
+#sheet h2 .author{
+    display:block;
+    border-bottom:dashed 1px #7e1083;
+    padding:10px 0 5px;
+    margin:0 8px;
+    font-weight:normal;
+    line-height:1;
+    text-align: left;
+}
+#sheet h2 .entrytitle{
+    display:block;
+    padding:8px 0;
+    margin:0 5px;
+    font-size:120%;
+    line-height:1.2;
+    text-align: left;
+}
+#sheet .fkd{
+	background:url(http://img.nogizaka46.com/blog/img/entrytitlefkd.gif) 0 0 no-repeat;
+	width:12px;height:15px;margin-left:45px;
+	}
+.entrybody{line-height:2;padding:0 6px 20px;}
+.assetmorelink{
+	border-top:dashed 1px #7e1083;
+	text-align:center;
+	}
+.assetmorelink a{background:#f4e9f6;display:block;padding:0.5em 0;}
+.assetmorelink a:hover{background:#f7eef8;}
+.entrybottom{
+	border-top:dashed 1px #7e1083;padding:0.5em 0;
+	font-size:85%;text-align:center;margin-bottom:5em;
+    }
+    

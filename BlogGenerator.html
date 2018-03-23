@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<title>乃木坂Blog 长图生成器</title>
+        <link href="source/Style/BlogGenerator.css" type="text/css" rel="stylesheet" />
+        <script src="source/Functions/BlogGenerator.js" type="text/javascript"></script>
+        <script src="source/ckeditor/ckeditor.js"></script>
+        <script src="source/Functions/html2canvas.js"></script>
+        <script src="source/Functions/canvas2image.js"></script> 
+        <link rel="shortcut icon" href="source/Style/favicon.ico" type="image/x-icon">
+        
+        <meta name="author" content="Chongyi Xu">
+        <meta charset="UTF-8"> 
+	</head>
+
+	<body>
+		<h1 class="head">乃木坂Blog 长图生成器</h1>
+        <div id="edit">
+            <div id="author_area" class="head">
+                作者: <input type="text" id="input_author">
+            </div>
+
+            <div id="title_area" class="head">
+                标题: <input type="text" id="input_title">
+            </div>
+
+            <div id="date_area" class="head">
+                日期: 
+                <select id = "input_year">
+                    <option value = "--" selected = "selected">--</option>
+                    <option value = "2012">2012</option>
+                    <option value = "2013">2013</option>
+                    <option value = "2014">2014</option>
+                    <option value = "2015">2015</option>
+                    <option value = "2016">2016</option>
+                    <option value = "2017">2017</option>
+                    <option value = "2018">2018</option>
+                </select> 年
+                <select id = "input_month">
+                    <option value = "--" selected = "selected">--</option>
+                    <option value = "01">01</option>
+                    <option value = "02">02</option>
+                    <option value = "03">03</option>
+                    <option value = "04">04</option>
+                    <option value = "05">05</option>
+                    <option value = "06">06</option>
+                    <option value = "07">07</option>
+                    <option value = "08">08</option>
+                    <option value = "09">09</option>
+                    <option value = "10">10</option>
+                    <option value = "11">11</option>
+                    <option value = "12">12</option>
+                </select>
+                月
+                <select id = "input_date">
+                    <option value = "--" selected = "selected">--</option>
+                    <option value = "01">01</option>
+                    <option value = "02">02</option>
+                    <option value = "03">03</option>
+                    <option value = "04">04</option>
+                    <option value = "05">05</option>
+                    <option value = "06">06</option>
+                    <option value = "07">07</option>
+                    <option value = "08">08</option>
+                    <option value = "09">09</option>
+                    <option value = "10">10</option>
+                    <option value = "11">11</option>
+                    <option value = "12">12</option>
+                    <option value = "13">13</option>
+                    <option value = "14">14</option>
+                    <option value = "15">15</option>
+                    <option value = "16">16</option>
+                    <option value = "17">17</option>
+                    <option value = "18">18</option>
+                    <option value = "19">19</option>
+                    <option value = "20">20</option>
+                    <option value = "21">21</option>
+                    <option value = "22">22</option>
+                    <option value = "23">23</option>
+                    <option value = "24">24</option>
+                    <option value = "25">25</option>
+                    <option value = "26">26</option>
+                    <option value = "27">27</option>
+                    <option value = "28">28</option>
+                    <option value = "29">29</option>
+                    <option value = "30">30</option>
+                    <option value = "31">31</option>
+                </select>
+                日
+                <select id = "input_day">
+                    <option value = "--" selected="selected">--</option>
+                    <option value = "Mon">Mon</option>
+                    <option value = "Tue">Tue</option>
+                    <option value = "Wed">Wed</option>
+                    <option value = "Thu">Thu</option>
+                    <option value = "Fri">Fri</option>
+                    <option value = "Sat">Sat</option>
+                    <option value = "Sun">Sun</option>
+                </select>
+                
+            </div>
+
+            <div id="main_area">
+                <textarea name="main" id="main" rows="10" cols="20"></textarea>
+            </div>
+
+            <p id="controls">
+                <button id="preview">预览</button>
+            </p>
+        </div>
+
+        <div id="sheet" class="hidden">
+            <div id="preview_content">
+                <div id="titlebox">
+                    <h2 class="clearfix">
+                        <span class="date" id="date">
+                            <span class="yearmonth" id="yearmonth"></span>
+                            <span class="daydate" id="daydate">
+                                <span class="dd1" id="dd1"></span>
+                                <span class="dd2" id="dd2"></span>
+                            </span>
+                        </span>
+                        <span class="heading">
+                            <span class="author" id="author"></span>
+                            <span class="entrytitle" id="entrytitle"></span>
+                        </span>
+                    </h2>
+                </div>
+
+                <div id="entry"></div>
+            </div>
+
+            <p id="controls">
+                <button id="back">返回编辑</button>
+                <button id="generate">生成长图</button>
+            </p>
+        </div>
+        <div id="output">
+        </div>
+	</body>
+</html>
